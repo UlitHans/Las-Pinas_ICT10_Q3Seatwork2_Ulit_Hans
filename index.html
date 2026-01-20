@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intramurals Checker</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+        }
+
+        .container {
+            width: 520px;
+            margin: 60px auto;
+            padding: 30px;
+            border: 2px solid #3366cc;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #3366cc;
+        }
+
+        .group {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #3366cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #254a99;
+        }
+
+        #Result {
+            margin-top: 20px;
+            padding: 12px;
+            border: 1px solid #3366cc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Intramurals Team Checker</h2>
+
+        <div class="group">
+            <p><strong>Online Registration:</strong></p>
+            <input type="radio" name="answer1" value="yes"> Yes
+            <input type="radio" name="answer1" value="no"> No
+        </div>
+
+        <div class="group">
+            <p><strong>Medical Clearance:</strong></p>
+            <input type="radio" name="answer3" value="yes1"> Yes
+            <input type="radio" name="answer3" value="no1"> No
+        </div>
+
+        <div class="group">
+            <p><strong>Grade Level:</strong></p>
+            <select id="grd">
+                <option value="">Select</option>
+                <option value="BB">Grade 7</option>
+                <option value="RB">Grade 8</option>
+                <option value="YT">Grade 9</option>
+                <option value="GH">Grade 10</option>
+            </select>
+        </div>
+
+        <button py-click="nanamigreen">Submit</button>
+
+        <div id="Result">
+            Please fill out the form.
+        </div>
+
+        <script type="py" src="main.py"></script>
+    </div>
+
+</body>
+</html>
